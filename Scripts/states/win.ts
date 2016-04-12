@@ -53,14 +53,14 @@ module states {
             this.game.addChild(this.ocean);
 
             //Game Over Label
-            this.mailPilotLabel = new objects.Label(320, 40, "PAPER PLANES");
+            this.mailPilotLabel = new objects.Label(320, 40, "Man Of Steel");
             this.mailPilotLabel.font = "60px Consolas";
             this.mailPilotLabel.regX = this.mailPilotLabel.getMeasuredWidth() * 0.5;
             this.mailPilotLabel.regY = this.mailPilotLabel.getMeasuredLineHeight() * 0.5;
             this.game.addChild(this.mailPilotLabel);
 
 
-            this.mailPilotLabel1 = new objects.Label(250, 140, "You have to save the plane\n\nfrom wind and try prick the bubbles\n\nas more as possible to gain high score..");
+            this.mailPilotLabel1 = new objects.Label(250, 140, "You have to saved everyone\n\nfrom airplane crash and defeated\n\nthe 'Lex Luthor' in his evil deeds...");
             this.mailPilotLabel1.font = "24px Consolas";
             this.mailPilotLabel1.regX = this.mailPilotLabel.getMeasuredWidth() * 0.5;
             this.mailPilotLabel1.regY = this.mailPilotLabel.getMeasuredLineHeight() * 0.5;

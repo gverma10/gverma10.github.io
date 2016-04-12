@@ -50,6 +50,16 @@ var states;
             this.mailPilotLabel1.regX = this.mailPilotLabel.getMeasuredWidth() * 0.5;
             this.mailPilotLabel1.regY = this.mailPilotLabel.getMeasuredLineHeight() * 0.5;
             this.game.addChild(this.mailPilotLabel1);
+            this.mailPilotLabel2 = new objects.Label(450, 415, " Level - I\n\n'Kryptonite'");
+            this.mailPilotLabel2.font = "20px Consolas";
+            this.mailPilotLabel2.regX = this.mailPilotLabel.getMeasuredWidth() * 0.5;
+            this.mailPilotLabel2.regY = this.mailPilotLabel.getMeasuredLineHeight() * 0.5;
+            this.game.addChild(this.mailPilotLabel2);
+            this.mailPilotLabel3 = new objects.Label(425, 465, "Next Level at 40 points");
+            this.mailPilotLabel3.font = "14px Consolas";
+            this.mailPilotLabel3.regX = this.mailPilotLabel.getMeasuredWidth() * 0.5;
+            this.mailPilotLabel3.regY = this.mailPilotLabel.getMeasuredLineHeight() * 0.5;
+            this.game.addChild(this.mailPilotLabel3);
             //Play Button
             this.playButton = new objects.Button(320, 350, "playButton");
             this.playButton.on("click", this.playClicked, this);

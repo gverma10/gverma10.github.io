@@ -14,7 +14,7 @@ var constants;
     // Game Constants
     constants.CLOUD_NUM = 10;
     constants.LABEL_FONT = "40px Consolas";
-    constants.LABEL_COLOUR = "#FFFF00";
+    constants.LABEL_COLOUR = "#FF0000";
     constants.PLANE_LIVES = 11;
 })(constants || (constants = {}));
 //# sourceMappingURL=constants.js.map

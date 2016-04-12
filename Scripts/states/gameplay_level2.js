@@ -112,8 +112,8 @@ var states;
                             createjs.Sound.play(collider.sound);
                         }
                         if (collider.name == "laser") {
-                            this.scoreboard.lives++;
-                            this.scoreboard.score -= 0;
+                            this.scoreboard.lives--;
+                            this.scoreboard.score -= 25;
                             this.laser.reset();
                             this.laser.update();
                         }
@@ -163,7 +163,7 @@ var states;
                 currentState = constants.GAME_OVER_STATE;
                 stateChanged = true;
             }
-            if (this.scoreboard.score > 60) {
+            if (this.scoreboard.score > 70) {
                 this.scoreboard.active = false;
                 this.game.removeAllChildren();
                 stage.removeChild(this.game);

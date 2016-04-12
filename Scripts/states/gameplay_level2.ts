@@ -154,8 +154,8 @@ module states {
                         }
 
                         if (collider.name == "laser") {
-                            this.scoreboard.lives++;
-                            this.scoreboard.score -= 0;
+                            this.scoreboard.lives--;
+                            this.scoreboard.score -= 25;
                             this.laser.reset();
                             this.laser.update();
 
@@ -226,7 +226,7 @@ module states {
                 stateChanged = true;
             }
 
-            if (this.scoreboard.score > 60) {
+            if (this.scoreboard.score > 70) {
                 this.scoreboard.active = false;
 
                 this.game.removeAllChildren();

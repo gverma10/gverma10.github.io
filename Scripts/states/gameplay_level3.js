@@ -193,7 +193,7 @@ var states;
                 currentState = constants.GAME_OVER_STATE;
                 stateChanged = true;
             }
-            if (this.scoreboard.score > 90) {
+            if (this.scoreboard.score > 110) {
                 this.scoreboard.active = false;
                 this.game.removeAllChildren();
                 stage.removeChild(this.game);

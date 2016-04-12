@@ -38,6 +38,8 @@ module states {
         public ocean: objects.Ocean;
         public mailPilotLabel: objects.Label;
         public mailPilotLabel1: objects.Label;
+        public mailPilotLabel2: objects.Label;
+        public mailPilotLabel3: objects.Label;
         public playButton: objects.Button;
         public play: boolean = false;
 
@@ -65,6 +67,18 @@ module states {
             this.mailPilotLabel1.regX = this.mailPilotLabel.getMeasuredWidth() * 0.5;
             this.mailPilotLabel1.regY = this.mailPilotLabel.getMeasuredLineHeight() * 0.5;
             this.game.addChild(this.mailPilotLabel1);
+
+            this.mailPilotLabel2 = new objects.Label(450, 415, " Level - I\n\n'Kryptonite'");
+            this.mailPilotLabel2.font = "20px Consolas";
+            this.mailPilotLabel2.regX = this.mailPilotLabel.getMeasuredWidth() * 0.5;
+            this.mailPilotLabel2.regY = this.mailPilotLabel.getMeasuredLineHeight() * 0.5;
+            this.game.addChild(this.mailPilotLabel2);
+
+            this.mailPilotLabel3 = new objects.Label(425, 465, "Next Level at 40 points");
+            this.mailPilotLabel3.font = "14px Consolas";
+            this.mailPilotLabel3.regX = this.mailPilotLabel.getMeasuredWidth() * 0.5;
+            this.mailPilotLabel3.regY = this.mailPilotLabel.getMeasuredLineHeight() * 0.5;
+            this.game.addChild(this.mailPilotLabel3);
 
 
             //Play Button
